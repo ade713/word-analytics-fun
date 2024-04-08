@@ -11,7 +11,7 @@ export function Stats({ stats }) {
       <Stat number={numberOfWords} statLabel="Words" />
       <Stat number={numberOfCharacters} statLabel="Characters" />
       <Stat number={instagramCharactersLeft} statLabel="Instagram" />
-      <Stat number={facebookCharactersLeft} statLabel="Facebooks" />
+      <Stat number={facebookCharactersLeft} statLabel="Facebook" />
     </section>
   );
 }
