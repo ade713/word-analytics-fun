@@ -1,3 +1,5 @@
+import { CHARACTERS_LABEL, FACEBOOK_LABEL, INSTAGRAM_LABEL, WORDS_LABEL } from '../lib/constants';
+
 export function Stats({ stats }) {
   const { 
     facebookCharactersLeft,
@@ -8,10 +10,10 @@ export function Stats({ stats }) {
 
   return (
     <section className="stats">
-      <Stat number={numberOfWords} statLabel="Words" />
-      <Stat number={numberOfCharacters} statLabel="Characters" />
-      <Stat number={instagramCharactersLeft} statLabel="Instagram" />
-      <Stat number={facebookCharactersLeft} statLabel="Facebook" />
+      <Stat number={numberOfWords} statLabel={WORDS_LABEL} />
+      <Stat number={numberOfCharacters} statLabel={CHARACTERS_LABEL} />
+      <Stat number={instagramCharactersLeft} statLabel={INSTAGRAM_LABEL} />
+      <Stat number={facebookCharactersLeft} statLabel={FACEBOOK_LABEL} />
     </section>
   );
 }
